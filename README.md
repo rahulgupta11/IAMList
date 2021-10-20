@@ -20,12 +20,9 @@ so you can easily filter the roles and users in an excel sheet.
 So we will go ahead and do that, I have given the steps involved in extraction as below,
 
 1. Iterate through projects
-2. use — format=”table(bindings)[0]” to extract the information in json format. (Note: I am comfortable with working on data in json format, 
-if you think it is much more easier to retrieve the information in yaml format, you can also use that )
+2. use — format=”table(bindings)[0]” to extract the information in json format. 
 3. Clean the output from extra words and spaces (sed -e ‘s/^\w*\ *//’| tail -c +2)
 4. pipe the output to a python file.
 5. Use the json library to reformat the data and clean it further to display it in csv format.
 That’s it !! done.
 
-I have given the link below to my shell script and python script, Please feel free to use them. If you think there can be improvements made
-to the script for a better version, you could do that too.
